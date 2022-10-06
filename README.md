@@ -39,7 +39,7 @@ print("The coorelation coefficient is %0.3f"%r)
 byx=(N*sxy-sx*sy)/(N*sx2-sx**2)
 xmean=sx/N
 ymean=sy/N
-print("The regression line Y on X ::: %0.3f %0.3f (x-%0.3f)"%(ymean,byx,xmean))
+print("The regression line Y on X ::: y = %0.3f %0.3f (x-%0.3f)"%(ymean,byx,xmean))
 plt.scatter(x,y)
 def Reg(x):
     return ymean+byx*(x-xmean)
@@ -51,4 +51,4 @@ plt.ylabel('y-data')
 plt.legend(['regression line','data points'])
 ~~~
 # Results and Output : 
-![output](1.png)
+![output](2.png)
